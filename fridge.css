@@ -1,0 +1,347 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#banner {
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url('images/refrigerator.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+}
+.navbar{
+    background-color:#000000 !important;
+    position:fixed;
+    width:100% !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (max-width:768px) {
+    #banner h1{
+        font-size: 38px;
+        font-weight:bold;
+    }
+}
+@media screen and (max-width:480px) {
+    #banner h1{
+        font-size: 38px;
+        font-weight:bold;
+    }
+}
+.service-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    #banner {
+        height: 50vh;
+    }
+    .service-box {
+        margin-bottom: 20px;
+    }
+}
+
+#washing-machine-service {
+    background-color: #e9ecef; /* Light grey background for differentiation */
+    padding: 3rem 0;
+}
+
+#washing-machine-service h2 {
+    color: #343a40;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+#washing-machine-service h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #007bff; /* Blue accent color */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#washing-machine-service p {
+    color: #495057;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#washing-machine-service ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#washing-machine-service ul li {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#washing-machine-service ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    #washing-machine-service ul {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+#experience-washing-machine {
+    background-color: #f7f7f7; /* Light background color for contrast */
+    padding: 3rem 0;
+}
+
+#experience-washing-machine h2 {
+    color: #007bff; /* Blue accent color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+#experience-washing-machine h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #007bff; /* Matching underline color */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#experience-washing-machine p {
+    color: #495057;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#experience-washing-machine ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#experience-washing-machine ul li {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#experience-washing-machine ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    #experience-washing-machine ul {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+#contact {
+    background-color: #f7f7f7;
+    padding: 3rem 0;
+}
+
+#contact h2 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#contact p {
+    color: #6c757d;
+    font-size: 1.1em;
+    margin: 15px 0;
+}
+
+#contact p:hover {
+    color: #ff6f61;
+    transition: color 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.bg-light {
+    background-color: #f7f7f7 !important;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 3rem 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-links {
+    margin-top: 10px;
+    margin-bottom:2rem;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
+}
+
+.footer-link:first-child {
+    margin-left: 0;
+}
+
+.footer-link:last-child {
+    margin-right: 0;
+}
+
+
+#call-button {
+    position: fixed;
+    bottom: 0; /* Position at the bottom */
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    background-color: black; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure it appears above other content */
+}
+.full-width-button {
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px; /* Align text vertically */
+    display: block;
+    width: 100%;
+}
+  
+  .full-width-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg);
+    animation: shiningWave 3s linear infinite;
+    z-index: 0;
+  }
+  
+  .full-width-button span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  @keyframes shiningWave {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
